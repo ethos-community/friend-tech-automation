@@ -1,0 +1,42 @@
+{
+  "name": "@fta/cli",
+  "version": "1.0.0",
+  "description": "Automation helpers for friend.tech",
+  "type": "module",
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "author": "Ethos Network Inc.",
+  "license": "MIT",
+  "bin": {
+    "fta": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@fta/helpers": "^1.0.0",
+    "@inkjs/ui": "^1.0.0",
+    "@the-convocation/twitter-scraper": "^0.8.1",
+    "csv-parse": "^5.5.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1",
+    "express": "^4.19.2",
+    "ink": "^4.4.1",
+    "ink-link": "^3.0.0",
+    "ink-ui": "^0.4.0",
+    "keychain": "^1.5.0",
+    "pastel": "^2.0.2",
+    "react": "^18.2.0",
+    "telegraf": "^4.15.0",
+    "user-agents": "^1.1.31",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/keychain": "^1.4.4",
+    "@types/react": "^18.2.38",
+    "@types/user-agents": "^1.0.4",
+    "tsx": "^4.3.0"
+  }
+}

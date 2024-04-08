@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "es2022": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard-with-typescript",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "unicorn",
+    "jest",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "project": [
+      "./tsconfig.json",
+      "./packages/*/tsconfig.json"
+    ]
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "separate-type-imports"
+      }
+    ],
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "array-callback-return": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        },
+        "warnOnUnassignedImports": true
+      }
+    ],
+    "no-implicit-coercion": "error",
+    "prettier/prettier": "error",
+    "unicorn/prefer-node-protocol": "error"
+  }
+}

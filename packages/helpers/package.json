@@ -1,0 +1,12 @@
+{
+  "name": "@fta/helpers",
+  "version": "1.0.0",
+  "description": "Common helpers and constants",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Ethos Network Inc.",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b"
+  }
+}

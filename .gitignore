@@ -1,0 +1,6 @@
+.env
+.vscode
+cached-users.json
+dist
+node_modules
+test-reports
